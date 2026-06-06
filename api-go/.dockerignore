@@ -1,0 +1,19 @@
+# Control de versiones
+.git
+.gitignore
+
+# Variables de entorno (nunca deben entrar a la imagen)
+.env
+.env.*
+!.env.example
+
+# Binario compilado localmente (el builder lo regenera dentro del contenedor)
+api-go
+
+# Herramientas y configuración de desarrollo
+.vscode
+.idea
+*.md
+
+# Cache de Go local (no relevante en el builder)
+vendor/
